@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GREEN-API</title>
+    <style>
+#sideBar {
+  position: fixed;
+  left: 24px;
+  top: 0px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input {
+            font-size: 16px;
+            width: 250px;
+            float:left;
+        }
+        button {
+            font-size: 16px;
+            width: 250px;
+            float:left;
+        }
+        p {
+            font-size: 16px;
+            margin-top: 0px;
+            text-align: start;
+        }
+        textarea {
+            width: 250px;
+            height: 150px;
+        }
+        .response {
+            width: 400px;
+            height: 500px;
+        }
+        table, th, tr, td {
+            border: 5px solid white;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+<div  style="float: left; width: 260px;">
+<table>
+<tr>
+  <th>
+    <input type="text" id="idInstance" placeholder="Введите idInstance"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="password" id="ApiTokenInstance" placeholder="Введите ApiTokenInstance"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="button" id="getDataButtom" value="getSettings" onclick="getData()"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="button" id="getStateInstanceButtom" value="getStateInstance" onclick="getStateInstance()"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="text" id="phoneMessage" placeholder="Введите номер телефона"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <textarea name="Введите текст" id="Message" maxlength="2000"></textarea>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="button" id="sendMessageButtom" value="sendMessage" onclick="sendMessage()"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="text" id="phoneFile" placeholder="Введите номер телефона"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="text" id="fileName" placeholder="Введите url файла"/>
+  </th>
+</tr>
+<tr>
+  <th>
+  </th>
+</tr>
+<tr>
+  <th>
+    <input type="button" id="sendFileButtom" value="sendFileByUrl" onclick="sendFileByUrl()"/>
+  </th>
+</tr>
+</table>
+<p id="printResult" class="response"></p>
+</div>
+<div style="float: left; padding: 10px;">
+<div>
+<p>Ответ:</p>
+</div>
+<textarea id="printResponse" class="response" readonly></textarea>
+</div>
+    <script src="script1.js"></script>
+</body>
+</html>
